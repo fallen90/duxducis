@@ -147,7 +147,8 @@
 		   
 		   <script>
 				$(function(){
-					var api_url ="http://localhost/api/pull/missal/9fae76b780447c03bb9855fae1dd2c80";
+					var computer_ip = "192.168.137.1";
+					var api_url ="http://" + computer_ip + "/api/pull/missal/9fae76b780447c03bb9855fae1dd2c80";
 					$.get(api_url).done(function(data){
 						var json = $.parseJSON(data);
 						var data = json['data'];
