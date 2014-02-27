@@ -161,7 +161,9 @@
 						var data = json['data'];
 						$('.missals').html("");
 						var html = "";
+						
 						$.each(data,function(index,value){
+							var missalgroup = data[value['id']];
 							
 							var dateParts = value['missal_date'].split("-");
 							var jsDate = new Date(dateParts[0], dateParts[1] - 1, dateParts[2].substr(0,2));
@@ -181,7 +183,7 @@
 							} else {
 								html += '<ul data-role="listview" data-theme="a" >';
 							}
-								$.each(value['missals'],function(index,mis){
+								$.each(missalgroup['missals'],function(index,mis){
 									
 									html +='<li><a href="#" id="missal'+mis['missal_id']+'" >';
 									html +='<h3>'+mis['missal_title']+'</h3>';
