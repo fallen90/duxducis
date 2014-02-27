@@ -147,8 +147,15 @@
 		   
 		   <script>
 				$(function(){
-					var computer_ip = "192.168.137.1";
-					var api_url ="http://" + computer_ip + "/api/pull/missal/9fae76b780447c03bb9855fae1dd2c80";
+					
+					$.mobile.loading( 'show', {
+						text: 'Loading Missals',
+						textVisible: true,
+						theme: 'a',
+						html: ""
+					});
+					var computer_ip = "duxducis.us.to";
+					var api_url ="http://" + computer_ip + "/pull/missal/9fae76b780447c03bb9855fae1dd2c80";
 					$.get(api_url).done(function(data){
 						var json = $.parseJSON(data);
 						var data = json['data'];
@@ -185,9 +192,9 @@
 							html += '</div>';
 						});
 						$('#content').html(html).trigger("create");
-						
+						$.mobile.loading( 'hide');
 					});
-								
+					
 					$('body').on('click', '[id^=missal]', function () {
 						$('#light').find('[data-role=header]').find('h1').html($(this).find('h3').html());
 						var body = $(this).find('.body').html();
