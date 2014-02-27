@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title></title>
+        
+         <meta charset="UTF-8" />
+            <title>Menu Page</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        	<link href="jquery-mobile/styles/jquery.mobile.flatui.min.css" rel="stylesheet" />
+            <script src="cordova.js" type="text/javascript"></script>
+            <script src="jquery-mobile/js/jquery.js" type="text/javascript"></script>
+            
+                   <script>
+                    $(document).on('pagebeforeshow', function () {
+                    $(this).find('a[data-rel=back]').buttonMarkup({
+                        iconpos: 'notext'
+                    });
+                      $.mobile.defaultPageTransition = "none";
+                });
+                         
+         </script>
+            <script src="jquery-mobile/js/jquery.mobile-1.4.0-rc.1.js" type="text/javascript"></script>
+         
+        <style>
+   
+           h2{
+               text-align:center;
+           }
+      
+           .ui-content p {
+               text-align:center;
+               font-size:1.2em;
+           }
+            
+    hr.style-five {
+         border: 0;
+    height: 1px;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image:      -o-linear-gradient(left, #ccc, #333, #ccc); 
+    }
+        </style>
+    </head>
+    <body>
+        <div data-role="page" data-theme="d">
+            <div data-role="header">
+                
+                 <a href="#nav-panel" data-icon="bars"  data-iconpos="notext">Menu</a>
+                <a href="MenuPage.html" data-icon="home"  data-iconpos="notext" data-ajax="false">Home</a>
+                <h1>Institutional Prayer</h1>
+            </div>
+            <div data-role="content" >
+                <div data-role="collapsible" data-inset="true" >
+                   <h2>Morning Prayers</h2>
+                    <ul data-role="listview" data-filter="true">
+                       
+                            <li><a href="#morning">Morning Offering With Monthly Intension</a></li>
+                            <li><a href="#stmichael">Prayer to Saint Michael The Archangel</a></li>
+                            <li><a href="#holy-spirit">Prayer to Holy Spirit</a></li>
+                            <li><a href="#guardian-angel">Prayer to Guardian Angel</a></li>
+                    </ul>
+                </div>
+                
+                <div data-role="collapsible" data-inset="true" >
+                   <h2>Afternoon Prayers</h2>
+                    <ul data-role="listview" data-filter="true">
+                       
+                           <li><a href="#memorare">Memorare</a></li>
+                             <li><a href="#divine-praises">Divine Praises</a></li>
+                             <li><a href="#happy-death">Happy Death</a></li>
+                             <li><a href="#angelus">The Angelus</a></li>
+                             <li><a href="#divine-mercy">Divine Mercy Prayer</a></li>
+                    </ul>
+                </div>
+                
+                 <div data-role="collapsible" data-inset="true">
+                   <h2>Prayer After Mass</h2>
+                    <ul data-role="listview" data-filter="true">
+                       
+                            <li><a href="#neo-centennial">Neo-Centennial Prayer</a></li>
+                            <li><a href="#nicene-creed">The Nicene-Constantinopolitan Creed</a></li>
+                            <li><a href="#lords-prayer">The Lord's Prayer</a></li>
+                            <li><a href="#divine-praises">Divine Praises</a></li>
+                            <li><a href="#invocation">Invocations</a></li>
+                            <li><a href="#stmichael">Prayer to Saint Michael The Archangel</a></li>
+                            <li><a href="#guardian-angel">Prayer to Guardian Angel</a></li>
+                            <li><a href="#anima-christi">Anima Christi</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div data-role="footer" data-position="fixed"> 
+                <h1></h1>
+            </div>
+            <div data-role="panel" data-position-fixed="true"  data-display="push"  id="nav-panel">
+            <ul data-role="listview">
+            <li data-icon="delete"><a href="#pray" data-rel="close">Close menu</a></li>
+                <li ><a href="Basic.html" >
+                <img src="styles/images/basicPrayer.png" class="ui-li-thumb">
+                <h2>Basic Prayers</h2>
+                <p>View the Liturgical Seasons of the Church</p>
+             
+            </a></li>
+            <li><a href="#" >
+                <img src="styles/images/institutionalPrayer.png" class="ui-li-thumb">
+                <h2>Institutional</h2>
+                <p>Collection of institutional and other prayers</p>
+                
+            </a></li>
+            
+            <li><a href="Special.html" rel="external" >
+                <img src="styles/images/specialPrayer.png" class="ui-li-thumb" data-transition="pop">
+                <h2>Special Prayers</h2>
+                <p>List of Saints and their biography</p>
+               
+            </a></li>
+            
+        </ul>
+    </div>
+        </div>
+        <!--/List Page-->
+        
+        
+        
+        <div data-role="page" id="morning" data-theme="d">
+             <div data-role="header" data-add-back-btn="true">
+                 <h1>Morning Prayers</h1>
+             </div>
+             
+             <div data-role="content">
+                  <h2>Morning Prayer with Monthly Intension</h2>
+                  <hr class="style-five">
+             
+                  <p>O Jesus, through the Immaculate Heart of Mary,</p>
+                  <p>Of this day in union with the Holy Sacrifice of the Mass </p>
+                  <p>Throughout the world.  I offer them for all the intentions</p>
+                  <p>Of your Sacred Heart: the salvation of souls, reparation for sin, the reunion of all Christians</p>
+                  <p>I offer them for the intentions of our bishops,</p>
+                  <p>And of all Apostles of Prayer, and in particular </p>
+                  <p>For those recommended by our Holy Father this month. </p>
+                     <b> <p>Amen</p></b>
+                  </div>
+             </div>
+            <div data-role="footer" data-position="fixed">
+             
+             <h1> </h1>
+         </div><!-- Footer-->
+         
+        
+        
+        <div data-role="page" id="stmichael" data-theme="d">
+             <div data-role="header" data-add-back-btn="true">
+                 <h1>Morning Prayers</h1>
+             </div>
+             
+             <div data-role="content">
+                  <h2>Prayer To St.Michael the Archangel</h2>
+                  <hr class="style-five">
+             
+                  
+                  <p>St. Michael the Archangel,</p>
+                  <p>defend us in battle;  </p>
+                  <p> Be our defense against the wickedness</p>
+                  <p>And snares of the devil.</p>
+                  <p>May God rebuke him,</p>
+                  <p> we humbly pray, and do thou, </p>
+                  <p> O prince of the heavenly host, </p>
+                  <p> By the power of God, thrust into hell Satan</p>
+                  <p>And all evil spirits who prowl around the world seeking the ruin of souls.</p>
+                   
+                     <b> <p>Amen</p></b>
+              
+             </div>
+            <div data-role="footer" data-position="fixed">
+             
+             <h1> </h1>
+         </div><!-- Footer-->
+         </div>
+        
+        <!--Holy Spiriti -->
+         <div data-role="page" id="holy-spirit" data-theme="d">
+             <div data-role="header" data-add-back-btn="true">
+                 <h1>Morning Prayers</h1>
+             </div>
+             
+             <div data-role="content">
+                  <h2>Prayer To Holy Spirit</h2>
+                  <hr class="style-five">
+                 
+                        <p>Come, O Holy Spirit, fill the hearts of your faithful</p>         
+                        <p>And enkindle in them the fire of your love.</p>         
+                        <p>Send forth your Spirit, and they shall be created</p>         
+                        <p>And you shall renew the face of the earth</p>         
+                        <b><p>Let us pray:</p></b>         
+                        <p> O God, who by the light of the Holy Spirit</p>         
+                        <p>Who instruct the hearts of thy faithful,</p>         
+                        <p>Grant us by the same Holy Spirit</p>         
+                        <p> That we may be truly wise and ever rejoice in his consolation,</p>         
+                        <p>Through Christ our Lord</p>         
+                          <b> <p>Amen</p></b>
+                  </div>
+             </div>
+             <div data-role="footer" data-position="fixed">
+             
+             <h1> </h1>
+         </div><!-- Footer-->
+   
+         <!--Guardian Angel-->
+        
+        
+        <div data-role="page" id="guardian-angel" data-theme="d">
+             <div data-role="header" data-add-back-btn="true">
+                 <h1>Morning Prayers</h1>
+             </div>
+             
+             <div data-role="content">
+                  <h2>Prayer To Guardian Angel</h2>
+                    <hr class="style-five">
+          
+                          <p> Angel of God, my Guardian dear,</p> 
+                          <p>To whom God's love commits me here.</p> 
+                          <p>Ever this day be at my side</p> 
+                          <p>To light and guard</p> 
+                          <p>To rule and guide</p> 
+                          <b> <p>Amen</p></b>
+                 
+             </div>
+            <div data-role="footer" data-position="fixed">
+             
+             <h1> </h1>
+         </div><!-- Footer-->
+         </div>
+        
+        
+        <!--Memorare-->
+        
+        
+        <div data-role="page" id="memorare" data-theme="d">
+             <div data-role="header" data-add-back-btn="true">
+                 <h1>Afternoon Prayers</h1>
+             </div>
+             
+             <div data-role="content">
+                  <h2 >Memorare</h2>
+                  <hr class="style-five">
+
+                  
+                 
+                          <p>Remember, O most gracious Virgin Mary,</p>
+                          <p>That never was it known that anyone who fled to your protection, implored your help, </p>
+                          <p>Or sought your intercession, was left unaided.</p>
+                          <p>Inspired by this confidence, I fly unto you,</p>
+                          <p>O Virgin of virgins, my Mother.  To you I come, before you I stand, sinful and sorrowful</p>
+                          <p>O Mother of the Word Incarnate, despise not my petitions, but in your mercy, hear and answer me.</p>
+                         <b> <p>Amen</p></b>
+                
+             </div>
+            <div data-role="footer" data-position="fixed">
+             
+             <h1> </h1>
+         </div><!-- Footer-->
+         </div>
+        
+        <!--Divine Praises-->
+        
+        
+        <div data-role="page" id="divine-praises">
+             <div data-role="header" data-add-back-btn="true">
+                 <h1>Afternoon Prayers</h1>
+             </div>
+             
+             <div data-role="content">
+                  <h2 class="ui-bar ui-bar-a">Divine Praises</h2>
+                  
+                  <div class="ui-body">
+                        <p>Blessed be God</p>
+                        <p>Blessed be His Holy Name</p>
+                        <p>Blessed be Jesus Christ, True God and True Man</p>
+                        <p>Blessed be the Name of Jesus</p>
+                        <p>Blessed be His Most Sacred Heart</p>
+                        <p>Blessed be His Most Precious Blood</p>
+                        <p>Blessed be Jesus in the Most Holy Sacrament of the Altar</p>
+                        <p>Blessed be the Holy Spirit, the Paraclete</p>
+                        <p>Blessed be the Great Mother of God, Mary Most Holy</p>
+                        <p>Blessed be her Holy and Immaculate Conception</p>
+                        <p>Blessed be her Glorious Assumption</p>
+                        <p>Blessed be the Name of Mary, Virgin and Mother</p>
+                        <p>Blessed be St. Joseph, Her Most Chaste Spouse</p>
+                        <p>Blessed be God in His Angels and in His Saints.</p>
+                  </div>
+             </div>
+            <div data-role="footer" data-position="fixed">
+             
+             <h1> </h1>
+         </div><!-- Footer-->
+         </div>
+        
+        
+        <!--Happy Death-->
+        
+        
+        <div data-role="page" id="happy-death" data-theme="d">
+             <div data-role="header" data-add-back-btn="true">
+                 <h1>Afternoon Prayers</h1>
+             </div>
+             
+             <div data-role="content">
+                  <h2 >Happy Death</h2>
+                   <hr class="style-five">
+                 
+                       <p>Jesus, Mary and Joseph - I give you my heart and my soul.</p>
+                       <p>Jesus, Mary and Joseph - Assist me in my last agony.</p>
+                       <p>Jesus, Mary and Joseph - May I breathe forth my soul in peace with you.</p>
+                       <p>Dear Lord, I ask for your protection and care over my loved ones and myself.</p>
+                       <p>Send your guardian angels to protect us and lead us from danger.</p>
+                       <p>Lord, help merecognize your intervention in my life</p>
+                        <b> <p>Amen</p></b>
+               
+             </div>
+            <div data-role="footer" data-position="fixed">
+             
+             <h1> </h1>
+         </div><!-- Footer-->
+         </div>
+        
+        
+        
+        <!--The Angelus-->
+        
+        
+        <div data-role="page" id="angelus" data-theme="d">
+             <div data-role="header" data-add-back-btn="true" >
+                 <h1>Afternoon Prayers</h1>
+             </div>
+             
+             <div data-role="content">
+                  <h2 >The Angelus</h2>
+                   <hr class="style-five">
+                  
+                  
+                       <p><b>V</b> Praised be Jesus Christ, <br/> <b>R</b>. now and forever!</p>
+                       <p><b> In the name of the Father...</b></p>
+                       <p><b>V</b>. The Angel of the Lord declared unto Mary.<br/><b>R</b>.And she conceived by the power of the Holy Spirit.</p>
+                       <p>Hail, Mary, full of grace, the Lord is with you.<br/>
+                         Blessed are you among women,and blessed is the fruit of your womb, Jesus<br/> 
+                         Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death.<br/> 
+                Amen!
+                       </p>
+                       <p><b>V</b>.Behold the handmaid of the Lord.<br/>
+                           <b>R</b>.Be it done unto me according to your word.
+                       </p>
+                      
+                       <p><b>Hail Mary...</b></p>
+                      
+                       <p><b>V</b>.And the Word was made flesh.<br/>
+                             <b>R</b>.And dwelt among us.
+                       </p>
+                      
+                         <p><b>Hail Mary...</b></p>
+                       <p><b>V</b>.Pray for us, O holy Mother of God.<br/>
+                           <b>R</b>.That we may be made worthy of the promises of Christ.
+                       </p>
+                       <p><b>Let us pray:</b></p>
+                       <p> Pour forth, we beseech you,O Lord, your grace into our hearts;</p>
+                       <p>That we, to whom the Incarnation of Christ, your Son, </p>
+                       <p>Was made known by the message of an angel,
+                          may by his Passion and Cross be brought to the glory of his Resurrection.
+                       </p>
+                      
+                      
+                       <p>Through the same Christ, our Lord.  <b>Amen!</b></p>
+                       <p> St. John Marie Vianney and St. Therese of the Child Jesus, <br/>
+                           <b>R.</b> Pray for us.
+                       </p>
+                       <p>St. Peter and St. Paul,<br/>
+                            <b>R.</b> Pray for us.
+                       </p>
+                      
+                       <p>St. Lorenzo Ruiz and St. Pedro Calungsod,<br/>
+                           <b>R.</b> Pray for us.
+                       </p>
+                       <p> O Mary conceived without sin,<br/> 
+                           <b>R.</b>Pray for us who have recourse to thee.
+                       </p>
+                      
+                      
+                       <p>  <b>V</b> That in all things, <br/>
+                            <b>R</b>. God may be glorified! 
+                       </p>
+                       <p><b> In the name of the Father...</b></p>
+                 
+             </div>
+            <div data-role="footer" data-position="fixed">
+             
+             <h1> </h1>
+         </div><!-- Footer-->
+         </div>
+        
+        
+          <!--Divine Mercy-->
+        
+        
+        <div data-role="page" id="divine-mercy" data-theme="d">
+             <div data-role="header" data-add-back-btn="true">
+                 <h1>Afternoon Prayers</h1>
+             </div>
+             
+             <div data-role="content">
+                  <h2 >Divine Mercy (3O'clock Prayer)</h2>
+                    <hr class="style-five">
+                
+                      <p><b>Praised be Jesus Christ,</b><br/>
+                          <b> R. now and forever!</b>
+                      </p>
+                      <p><b>In the name of the Father...</b></p>
+                      <p>"You died Jesus, but the source of life flowed out for souls and the ocean of mercy opened up for the whole world.
+                           O fountain of Life, immeasurable Divine Mercy, cover the whole world and empty your self out upon us."
+                      </p>
+                      
+                      
+                      <p> "O Blood and Water which flowed out from the heart of Jesus as a Fountain of Mercy for us, I trust in You!"</p>
+                      <p>"Holy God, Holy Mighty One, Holy Immortal One, have mercy on us and the whole world" (3x)</p>
+                      <p><b>Amen.</b></p>
+                      <p> Jesus, meek and humble of heart,<br/>
+                          <b>R</b>.make our hearts like unto yours.
+                      </p>
+                      <p>  Jesus, Mary and Joseph, <br/>
+                           <b>R</b>.I give you my heart and my soul.
+                      </p>
+                      <p>Jesus, Mary and Joseph, <br/>
+                          <b>R</b>. assist me in my last agony.
+                      </p>
+                      <p>Jesus, Mary and Joseph, <br/>
+                      <b>R</b>.may I breathe forth my soul in peace with you.
+                      </p>
+               
+                      <b> <p>Amen</p></b>
+                      
+                      <p>   May the Holy Triune God live in our hearts, <br/>
+                            <b>R</b>. and in the hearts of all.
+                      </p>
+                      <p>  <b>In the name of the Father...</b></p>
+            
+                      
+                
+             </div>
+            <div data-role="footer" data-position="fixed">
+             
+             <h1> </h1>
+         </div><!-- Footer-->
+         </div>
+        
+        
+        <!--Neo-Centennial-->
+        
+        
+        <div data-role="page" id="neo-centennial"data-theme="d">
+             <div data-role="header" data-add-back-btn="true">
+                 <h1>Prayer after the Mass</h1>
+             </div>
+             
+             <div data-role="content">
+                  <h2 >Neo-Centennial Prayer</h2>
+                    <hr class="style-five">
+           
+                       <p> Blessed are you, Lord our God,  King of all ages:</p>    
+                      <p>From eternity you have called us to be your people, to sing your praises at all times.<</p>    
+                      <p>Father, we thank and praise you as we close this ''year of favor.''</p>    
+                      <p> This great season of grace is your gift to this little acre of grace   to renew us in spirit</p>    
+                      <p>You have given us strength to purify  our hearts, and serve you in freedom.</p>    
+                      <p>You have taught us how to live in this passing world with our heart set on the world that will never end.</p>    
+                      <p>We thank you for your enduring presence with us throughout all time.</p>    
+                      <p>May the year of grace proclaimed by Jesus of Nazareth continue in the life of the Church and in the personal life of each other.</p>    
+                      <p>As we complete this "year of favor" we begin our journey to a new jubilee 
+                         by seeking You constantly until our pilgrimage leads us to the door of heaven, which the Lord himself
+                          will open for us and invite us to join the company of the blessed
+                        </p>  
+                      <p>All praise and glory be to you, Father, through your Son Jesus Christ, in the unity of the Holy Spirit,
+                          with the intercession of our Patroness, the Immaculate Conception, the Immaculate Conception,
+                      </p>    
+                          <b> <p>Amen</p></b>
+                  
+             </div>
+            <div data-role="footer" data-position="fixed">
+             
+             <h1> </h1>
+         </div><!-- Footer-->
+         </div>
+        
+        
+        
+        <!--The Nicene-Constantinopolitan Creed-->
+        
+        
+        <div data-role="page" id="nicene-creed"    data-theme="d">
+             <div data-role="header" data-add-back-btn="true">
+                 <h1>Prayer after the Mass</h1>
+             </div>
+             
+             <div data-role="content">
+                  <h2 >The Nicene-Constantinopolitan Creed</h2>
+                    <hr class="style-five">
+                  
+                       <p>I believe in one God, the Father, the Almighty, maker of heaven and earth,of all that is, seen and unseen.</p>
+                       <p>I believe in one Lord, Jesus Christ, the only Son of God,
+                           eternally begotten of the Father, God from God, Light from Light, 
+                           true God from true God, begotten, not made, one in Being with the Father
+                       </p>
+                      
+                       <p>Through Him all things were made. For us men and for our salvation, 
+                He came down from heaven: by the power of the Holy Spirit. He was born of the Virgin Mary, 
+                and became Man.</p>
+                      
+                       <p>For our sake He was crucified under Pontius Pilate; 
+                           He suffered, died, and was buried.
+                           
+                       </p>
+                       <p>
+                           On the third day He rose again in fulfillment of the Scriptures
+                       </p>
+                      
+                       <p>
+                           He ascended into heaven, and is seated at the right hand of the Father. 
+                           He will come again in glory to judge the living and the dead,
+                           and his kingdom will have no end.
+                       </p>
+                           
+                           
+                       <p>
+                           I believe in the Holy Spirit, the Lord, the Giver of life, 
+                            who proceeds from the Father and the Son.
+                           
+                       </p>
+                       <p>
+                           With the Father and the Son He is worshiped and glorified.
+                            He has spoken through the prophets.
+                            
+                       </p>
+                       <p>
+                           I believe in one, holy, catholic and apostolic Church.
+                           I acknowledge one Baptism for the forgiveness of sins. I look for the resurrection of the dead
+                           , and the life of the world to come. 
+                       </p>
+                    
+                        <b> <p>Amen</p></b>
+              
+             </div>
+            <div data-role="footer" data-position="fixed">
+             
+             <h1> </h1>
+         </div><!-- Footer-->
+         </div>
+        
+          
+        <!--The Lord's Prayer-->
+        
+        
+        <div data-role="page" id="lords-prayer" data-theme="d">
+             <div data-role="header" data-add-back-btn="true">
+                 <h1>Prayer after the Mass</h1>
+             </div>
+             
+             <div data-role="content">
+                  <h2 >The Lord's Prayer</h2>
+                   <hr class="style-five">
+                 
+                       <p>  Our Father who art in heaven; </p>
+                       <p>Hollowed be thy name; thy kingdom come,</p>
+                       <p>Thy will be done on earth as it is in heaven</p>
+                       <p> Give us this day our daily bread</p>
+                       <p>And forgive us our trespasses.</p>
+                       <p>As we forgive those who trespass against us</p>
+                       <p> And lead us not into temptation</p>
+                       <p>   But deliver us from evil.</p>
+                        <b> <p>Amen</p></b>
+                 
+             </div>
+            <div data-role="footer" data-position="fixed">
+             
+             <h1> </h1>
+         </div><!-- Footer-->
+         </div>
+        
+           <!--Invocation-->
+        
+        
+        <div data-role="page" id="invocation" data-theme="d">
+             <div data-role="header" data-add-back-btn="true">
+                 <h1>Prayer after the Mass</h1>
+             </div>
+             
+             <div data-role="content">
+                  <h2 >Invocation</h2>
+                  
+               
+                       <p>Praised be Jesus Christ, <br/> 
+                       now and forever!</p>
+                      
+                       <p>St. John Marie Vianney and St. Therese of the Child Jesus,<br/> 
+                        <b>R.</b>   R. pray for us.</p>
+                       <p> St. Peter and St. Paul,<br/> 
+                           <b>R.</b>   R. pray for us.
+                       </p>
+                       <p>St. Lorenzo Ruiz and St. Pedro Calungsod,<br/>
+                           <b>R.</b>   R. pray for us.
+                       </p>
+                       <p>
+                           O Mary conceived without sin, <br/> 
+                            <b>R.</b> pray for us who have recourse to thee
+                       </p>
+                      
+                       <p>
+                           pray for us who have recourse to thee
+                            <b>R.</b>make our hearts like unto yours.
+                       </p>
+                       <p>
+                           Jesus, Mary and Joseph, <br/> 
+                           <b>R.</b>I give you my heart and my soul. 
+                       </p>
+                       <p>
+                           Jesus, Mary and Joseph,<br/> 
+                           <b>R.</b>assist me in my last agony.
+                       </p>
+                       <p>
+                           Jesus, Mary and Joseph,
+                           <b>R.</b>may I breathe forth my soul in peace with you
+                       </p>
+                          <b> <p>Amen</p></b>
+                       <p> May the Holy Triune God live in our hearts, <br/> 
+                         <b>R.</b>  and in the hearts of all.
+                       </p>
+                       <p>That in all things,<br/> 
+                          <b>R.</b> God may be glorified!
+                       </p>
+                      
+                
+             </div>
+            <div data-role="footer" data-position="fixed">
+             
+             <h1> </h1>
+         </div><!-- Footer-->
+         </div>
+        
+           <!--Anima  Christi-->
+        
+        
+        <div data-role="page" id="anima-christi" data-theme="d">
+             <div data-role="header" data-add-back-btn="true">
+                 <h1>Prayer after the Mass</h1>
+             </div>
+             
+             <div data-role="content">
+                  <h2 >Anima  Christi</h2>
+                  
+                
+                      <p>Soul of Christ, sanctify me.</p>
+                      <p>Body of Christ, save me.</p>
+                      <p>Blood of Christ, inebriate me.</p>
+                      <p>Water from the side of Christ, wash me. </p>
+                      <p>Passion of Christ, strengthen me. </p>
+                      <p>O Good Jesus, hear me.</p>
+                      <p> Within your wounds, hide me.</p>
+                      <p>Permit me not to be separated from you.</p>
+                      <p>From the malignant enemy, defend me.</p>
+                      <p>In the hour of death, call me</p>
+                      <p> And bid me come to you,that with your saints</p>
+                      <p>I may praise you forever and ever.</p>
+              
+                        <b> <p>Amen</p></b>
+                  </div>
+             </div>
+        
+    </body>
+</html>

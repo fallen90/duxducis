@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8" />
+            <title>Menu Page</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        	<link href="jquery-mobile/styles/jquery.mobile.flatui.min.css" rel="stylesheet" />
+            <script src="cordova.js" type="text/javascript"></script>
+            <script src="jquery-mobile/js/jquery.js" type="text/javascript"></script>
+                   <script>
+            $(document).bind("mobileinit", function(){
+               $.mobile.defaultPageTransition = 'none';
+                });
+                 
+         </script>
+            <script src="jquery-mobile/js/jquery.mobile-1.4.0-rc.1.js" type="text/javascript"></script>
+         
+        <style>
+              html,body  {
+            height: 100% !important;;
+            width: 100% !important;;
+            margin: 0px !important;;
+            padding: 0px !important;;
+            }
+           
+           h2{
+               text-align:center;
+           }
+      
+           .ui-content p {
+               text-align:center;
+               font-size:1.2em;
+           }
+            
+    hr.style-five {
+         border: 0;
+    height: 1px;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc); 
+    background-image:      -o-linear-gradient(left, #ccc, #333, #ccc); 
+    }
+        </style>
+      
+    </head>
+    <body>
+        <div data-role="page" data-theme="d" id="basicList">
+            <div data-role="header">
+                <a href="#nav-panel" data-icon="bars"  data-iconpos="notext">Menu</a>
+                <a href="MenuPage.html" data-icon="home"  data-iconpos="notext" data-ajax="false">Home</a>
+                <h1>Basic Prayers</h1>
+            </div>
+            
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true" data-filter="true" data-theme="j">
+                    <li><a href="#signOfCross">The Sign of the Cross</a></li>
+                    <li><a href="#lordsPrayer">The Lord's Prayer</a></li>
+                    <li><a href="#praise">Prayer of Praise</a></li>
+                    <li><a href="#hailmary">The Hail Mary</a></li>
+                    <li><a href="#beforeMeal">Prayer Before Meals</a></li>
+                    <li><a href="#afterMeal">Prayer After Meals</a></li>
+                    <li><a href="#apostleCreed">Apostle's Creed</a></li>
+                    <li><a href="#nicene">Nicene Creed</a></li>
+                    <li><a href="#guardianAngel">Prayer to the Guardian Angel</a></li>
+                    <li><a href="#goodAngel">O, My Good Angel</a></li>
+                    <li><a href="#actOfFaith">Act of Faith</a></li>
+                    <li><a href="http://www.google.com" rel="external">Google</a></li>
+                    
+                
+                </ul>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                 <h1></h1> 
+           </div>
+            
+           <div data-role="panel" data-position-fixed="true"  data-display="push"  id="nav-panel">
+            <ul data-role="listview">
+            <li data-icon="delete"><a href="#pray" data-rel="close">Close menu</a></li>
+                <li ><a href="#" >
+                <img src="styles/images/basicPrayer.png" class="ui-li-thumb">
+                <h2>Basic Prayers</h2>
+                <p>View the Liturgical Seasons of the Church</p>
+             
+            </a></li>
+            <li><a href="institutional.html" rel="external" data-transition="turn">
+                <img src="styles/images/institutionalPrayer.png" class="ui-li-thumb">
+                <h2>Institutional</h2>
+                <p>Collection of institutional and other prayers</p>
+                
+            </a></li>
+            
+            <li><a href="#" rel="external" >
+                <img src="styles/images/specialPrayer.png" class="ui-li-thumb" data-transition="pop">
+                <h2>Saints</h2>
+                <p>List of Saints and their biography</p>
+               
+            </a></li>
+            
+        </ul>
+    </div><!-- /panel -->  
+            
+     </div>
+        
+      <!-- /List Page  -->    
+      
+        
+        
+      <div data-role="page" id="signOfCross" data-theme="d">
+       <div data-role="header">
+           <a href="#basicList" data-icon="arrow-l"  data-iconpos="notext" >Menu</a>
+            <h1>Basic Prayers</h1>
+       </div>
+          
+          <div data-role="content">
+          <h2> The Sign of the Cross</h2>
+           <hr class="style-five">
+             <p>In the name of the Father, and of the Son, and of the Holy Spirit. Amen.</p>
+           </div>
+          
+      </div>
+        
+      <!-- /Sign of the Cross  -->   
+        
+       <div data-role="page" id="lordsPrayer" data-theme="d">
+       <div data-role="header">
+           <a href="#basicList" data-icon="arrow-l"  data-iconpos="notext" >Menu</a>
+            <h1>Basic Prayers</h1>
+       </div>
+          
+          <div data-role="content">
+          <h2> The Lords Prayer</h2>
+           <hr class="style-five">
+             <p>Our Father, in heaven; holy be Your Name; Your kingdom come; Your will be done on earth as it is in heaven. Give us today our daily bread; and forgive us our sins as we forgive those who sinned against us. Do not bring us to the test, but deliver us from evil. Amen.</p>
+           </div>
+          
+      </div>
+        <!-- /Lords Prayer  -->   
+        
+        
+       <div data-role="page" id="praise" data-theme="d">
+           <div data-role="header">
+               <a href="#basicList" data-icon="arrow-l"  data-iconpos="notext" >Menu</a>
+                <h1>Basic Prayers</h1>
+           </div>
+          
+          <div data-role="content">
+              <h2> Prayer of Praise</h2>
+               <hr class="style-five">
+                 <p>Glory be to the Father, and to the Son, and to the Holy Spirit. As it was in the beginning , is now, and ever shall be, world without end. Amen.</p>
+               </div>
+          
+      </div>
+         <!-- /Prayer of Praise  -->  
+         
+       <div data-role="page" id="hailmary" data-theme="d">
+           <div data-role="header">
+               <a href="#basicList" data-icon="arrow-l"  data-iconpos="notext" >Menu</a>
+                <h1>Basic Prayers</h1>
+           </div>
+          
+          <div data-role="content">
+              <h2> Hail Mary</h2>
+               <hr class="style-five">
+                 <p>Hail Mary, full of grace, the Lord is with you. Blessed are You among women and blessed is the fruit of Your womb Jesus. Holy Mary, Mother of God, pray for us sinners, now and at the hour of our death. Amen.</p>
+               </div>
+          
+      </div>
+        
+        <!-- / Hail Mary -->
+        
+        
+        
+        <div data-role="page" id="beforeMeal" data-theme="d">
+           <div data-role="header">
+               <a href="#basicList" data-icon="arrow-l"  data-iconpos="notext" >Menu</a>
+                <h1>Basic Prayers</h1>
+           </div>
+          
+          <div data-role="content">
+              <h2>Prayer Before Meal</h2>
+               <hr class="style-five">
+                 <p>Bless us O Lord and these Your gifts, which we are about to receive from Your bounty through Christ, our Lord. Amen.</p>
+               </div>
+          
+      </div>
+        
+           <!-- / Before Meal -->
+        
+        
+         
+        <div data-role="page" id="afterMeal" data-theme="d">
+           <div data-role="header">
+               <a href="#basicList" data-icon="arrow-l"  data-iconpos="notext" >Menu</a>
+                <h1>Basic Prayers</h1>
+           </div>
+          
+          <div data-role="content">
+              <h2>Prayer After Meal</h2>
+               <hr class="style-five">
+                 <p>We give You thanks, Almighty God, for all Your benefits. You who live and reign, forever and ever. Amen.</p>
+          </div>
+          
+      </div>
+        
+        
+          <!-- / After Meal -->
+        
+         <div data-role="page" id="apostleCreed" data-theme="d">
+           <div data-role="header">
+               <a href="#basicList" data-icon="arrow-l"  data-iconpos="notext" >Menu</a>
+                <h1>Basic Prayers</h1>
+           </div>
+          
+          <div data-role="content">
+              <h2>Apostole's Creed</h2>
+               <hr class="style-five">
+                 <p>I believe in God, the Father Almighty, creator of heaven and earth. I believe in Jesus Christ, His only Son, Our Lord. He was conceived by the power of the Holy Spirit and born of the Virgin Mary. He suffered under Pontius Pilate, was crucified, died and was buried. He descended to the dead. On the third day, he rose again. He ascended into heaven and is seated at the right hand of the Father. He will come again to judge the living and the dead. I believe in the Holy Spirit, the Holy Catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body and life everlasting. Amen. .</p>
+          </div>
+          
+      </div>
+        
+          <!-- / Apostles Creed -->
+        
+        
+         <div data-role="page" id="nicene" data-theme="d">
+           <div data-role="header">
+               <a href="#basicList" data-icon="arrow-l"  data-iconpos="notext" >Menu</a>
+                <h1>Basic Prayers</h1>
+           </div>
+          
+          <div data-role="content">
+              <h2>Nicene's Creed</h2>
+               <hr class="style-five">
+                 <p>
+                    I believe in one God, the Father almighty, maker of heaven and earth, of all things visible and invisible
+                     . I believe in one Lord Jesus Christ, the only Begotten Son of God, born of the Father before all ages. God from God, Light from Light, 
+                     true God from true God, begotten, not made, consubstantial with the Father; 
+                     through him all things were made. For us men and for our salvation He came 
+                     down from heaven, and by the Holy Spirit was incarnate of the Virgin Mary,
+                     and became man. For our sake he was crucified under Pontius Pilate, He 
+                     suffered death and was buried, and rose again on the third day in 
+                     accordance with the Scriptures. He ascended into heaven and is seated at 
+                     the right hand of the Father. He will come again in glory to judge the 
+                     living and the dead and His kingdom will have no end. I believe in the Holy
+                     Spirit, the Lord, the giver of life, who proceeds from the Father and the 
+                     Son, who with the Father and the Son is adored and glorified, who has spoken
+                     through the prophets. I believe in one, holy, catholic and apostolic Church.
+                     I confess one baptism for the forgiveness of sins and I look forward to the
+                     resurrection of the dead and the life of the world to come.
+                    Amen.
+
+                     
+                 </p>
+          </div>
+          
+      </div>
+        
+        <!-- / Nicene Creed -->
+        
+         <div data-role="page" id="guardianAngel" data-theme="d">
+           <div data-role="header">
+               <a href="#basicList" data-icon="arrow-l"  data-iconpos="notext" >Menu</a>
+                <h1>Basic Prayers</h1>
+           </div>
+          
+          <div data-role="content">
+              <h2>Prayer to Guardian Angel</h2>
+               <hr class="style-five">
+                 <p>Angel of God, my Guardian dear, to whom His love, commits me here. Ever this day, be at my side, to light and guard, to rule and guide. Amen.</p>
+               </div>
+          
+      </div>
+        
+        <!-- / Guardian Angel-->
+        
+        
+        <div data-role="page" id="goodAngel" data-theme="d">
+           <div data-role="header">
+               <a href="#basicList" data-icon="arrow-l"  data-iconpos="notext" >Menu</a>
+                <h1>Basic Prayers</h1>
+           </div>
+          
+          <div data-role="content">
+              <h2>O My, Good Angel</h2>
+               <hr class="style-five">
+                 <p>
+                    O, my good angel, whom God has appointed to be my guardian, enlighten and protect; direct and govern me who have been entrusted to you by the Divine Mercy. Amen.
+                </p>
+               </div>
+          
+      </div>
+        
+         <!-- / Good Angel-->
+        
+        
+         <div data-role="page" id="actOfFaith" data-theme="d">
+           <div data-role="header">
+               <a href="#basicList" data-icon="arrow-l"  data-iconpos="notext" >Menu</a>
+                <h1>Basic Prayers</h1>
+           </div>
+          
+          <div data-role="content">
+              <h2>Act of Faith</h2>
+               <hr class="style-five">
+                 <p>
+                    O my God I firmly believe that you are one God in three divine Persons, Father and Son, and Holy Spirit, I believe that your divine Son became man and died for our sins, and that he will come to judge the living and the dead. I believe these and all the truths which the holy Catholic Church teaches, because you revealed them, who can neither deceive. Amen.
+                </p>
+               </div>
+          
+      </div>
+        
+         <!-- / Faith-->
+    </body>
+</html>

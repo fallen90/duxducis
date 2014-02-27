@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8" />
+        <title>Menu Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="jquery-mobile/styles/jquery.mobile.flatui.min.css" rel="stylesheet" />
+        <script src="cordova.js" type="text/javascript"></script>
+        <script src="jquery-mobile/js/jquery.js" type="text/javascript"></script>
+            
+         <script>
+                    $(document).on('pagebeforeshow', function () {
+                    $(this).find('a[data-rel=back]').buttonMarkup({
+                        iconpos: 'notext'
+                    });
+                      $.mobile.defaultPageTransition = "none";
+                });
+                         
+         </script>
+            <script src="jquery-mobile/js/jquery.mobile-1.4.0-rc.1.js" type="text/javascript"></script>
+        <style>
+   
+           h2{
+               text-align:center;
+           }
+      
+           .ui-content p {
+               text-align:center;
+               font-size:1.2em;
+           }
+            
+            hr.style-five {
+                 border: 0;
+            height: 1px;
+            background: #333;
+            background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc); 
+            background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc); 
+            background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc); 
+            background-image:      -o-linear-gradient(left, #ccc, #333, #ccc); 
+            }
+        </style>
+    </head>
+    
+    
+    <body>
+        
+        <div data-role="page" data-theme="d" id="specialList">
+            <div data-role="header">
+                <a href="#nav-panel" data-icon="bars"  data-iconpos="notext">Menu</a>
+                <a href="MenuPage.html" data-icon="home"  data-iconpos="notext" data-ajax="false">Home</a>
+                <h1>Basic Prayers</h1>
+            </div>
+            
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true" data-filter="true" data-theme="j">
+                   <li><a href="#student">A Student's Prayer</a></li>
+                   <li><a href="#teacher">A Teacher's Prayer</a></li>
+                   <li><a href="#sick">Prayer for the Sick</a></li>
+                   <li><a href="#student">Prayer for Courage</a></li>
+                   <li><a href="#student">Prayer for Guidance</a></li>
+                    
+                    
+                
+                </ul>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                 <h1></h1> 
+           </div>
+            
+            <div data-role="panel" data-position-fixed="true"  data-display="push"  id="nav-panel">
+            <ul data-role="listview">
+            <li data-icon="delete"><a href="#pray" data-rel="close">Close menu</a></li>
+                <li ><a href="#" >
+                <img src="styles/images/basicPrayer.png" class="ui-li-thumb">
+                <h2>Basic Prayers</h2>
+                
+            </a></li>
+            <li><a href="institutional.html" rel="external" data-transition="turn">
+                <img src="styles/images/institutionalPrayer.png" class="ui-li-thumb">
+                <h2>Institutional</h2>
+            
+                
+            </a></li>
+            
+            <li><a href="#" rel="external" >
+                <img src="styles/images/specialPrayer.png" class="ui-li-thumb" data-transition="pop">
+                <h2>Special Prayers</h2>
+               
+               
+            </a></li>
+            
+        </ul>
+    </div><!-- /panel -->  
+         </div>
+        
+        <!-- /Page-->
+        
+        
+        
+        <div data-role="page" id="student" data-theme="d">
+             <div data-role="header" data-add-back-btn="true">
+                 <h1>Special Prayers</h1>
+             </div>
+             
+             <div data-role="content">
+                  <h2>A Student's Prayer</h2>
+                  <hr class="style-five">
+             
+                  
+                  <p>Jesus, my God: I’m a loafer! I can’t deceive you as I do my parents. I’m facing my books but my mind wanders all over the place.
+                They tell me I have no “method”. At other times they say that I am ungrateful, because I don’t take advantage of the opportunities which will never come my way again.
+                My father does not get tired of telling me repeatedly that he had to work and study at the same time, and that in his days there was more “responsibility”.  But even when I know he is right (which makes it worse for me), I go back to class and fool around with my classmates, ignore my teachers and at times even enjoy the luxury of being ironical, coming to class unprepared, studying between periods or on the way to the school (besides cheating in all almost all my written tests..) My God: I know, from the gospels that you were a real student ready to learn everything that was good and true.
+                Change me and my foolish head so full of day dreams, so that I may become a good student. Please, make this come true... Amen.
+                </p>
+              
+             </div>
+            <div data-role="footer" data-position="fixed">
+             
+             <h1> </h1>
+         </div><!-- Footer-->
+            </div>
+        
+        <!-- /Page-->
+        
+        <div data-role="page" id="teacher" data-theme="d">
+             <div data-role="header" data-add-back-btn="true">
+                 <h1>Special Prayers</h1>
+             </div>
+             
+             <div data-role="content">
+                  <h2>A Teacher's Prayer</h2>
+                  <hr class="style-five">
+             
+                                  
+                                  <p>I want to teach my students how to live this life on earth
+                To face its struggles and its strife 
+                And improve their worth
+                Not just a lesson in a book 
+                Or how the rivers flow 
+                But how to choose the proper path wherever they may go
+                To understand eternal truth 
+                And know the right from wrong
+                And gather all the beauty of a flower and a song
+                For I help the world to grow in wisdom and in grace
+                Then I shall feel that I have won and I have filled my place
+                And so I asked your guidance, God
+                That I may do my part
+                For character and confidence 
+                And happiness of heart. Amen. 
+
+                </p>
+              
+             </div>
+            <div data-role="footer" data-position="fixed">
+             
+             <h1> </h1>
+         </div><!-- Footer-->
+            </div>
+        
+        
+       <div data-role="page" id="sick" data-theme="d">
+             <div data-role="header" data-add-back-btn="true">
+                 <h1>Special Prayers</h1>
+             </div>
+             
+             <div data-role="content">
+                  <h2>Prayer for the Sick</h2>
+                  <hr class="style-five">
+             
+                  
+                  <p>We know, Lord God, that You have a special love for the sick. They are Your children and they are in pain. Give them the courage to discover a value in suffering. In your good time bring them true relief.
+                      Keep them content, happy and peaceful.
+                </p>
+              
+             </div>
+            <div data-role="footer" data-position="fixed">
+             
+             <h1> </h1>
+         </div><!-- Footer-->
+            </div>
+        
+        <!-- /Page-->
+        
+        
+         <div data-role="page" id="courage" data-theme="d">
+             <div data-role="header" data-add-back-btn="true">
+                 <h1>Special Prayers</h1>
+             </div>
+             
+             <div data-role="content">
+                  <h2>Prayer for Courage</h2>
+                  <hr class="style-five">
+             
+                  
+                  <p>Lord God, send us Your Spirit, so that we may find the
+                      strength and courage to do what we know is right.
+
+                </p>
+              
+             </div>
+            <div data-role="footer" data-position="fixed">
+             
+             <h1> </h1>
+         </div><!-- Footer-->
+            </div>
+        
+        <!-- /Page-->
+        
+         <div data-role="page" id="guidance" data-theme="d">
+             <div data-role="header" data-add-back-btn="true">
+                 <h1>Special Prayers</h1>
+             </div>
+             
+             <div data-role="content">
+                  <h2>Prayer for Courage</h2>
+                  <hr class="style-five">
+             
+                  
+                  <p>O gracious and holy Father, give us wisdom to perceive
+                      you, intelligence to understand you, diligence to seek
+                      you, patience to wait for you, eyes to see you, a 
+                      heart to meditate on you, and a life to proclaim you,
+                      through the power of the spirit of Jesus Christ, our 
+                      Lord.
+
+
+
+
+                </p>
+              
+             </div>
+            <div data-role="footer" data-position="fixed">
+             
+             <h1> </h1>
+         </div><!-- Footer-->
+            </div>
+        
+        <!-- /Page-->
+    </body>
+</html>
